@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST Verbs in action using Form</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <style>
+        body {
+            color: rgb(250, 245, 245);
+            background-color: rgb(36, 22, 93);
+        }
+        input{
+            color:black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Add New County with this FORM </h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <label for="capital">Capital:</label>
+    <input type="text" id="capital">
+    <label for="continent">Continent:</label>
+    <input type="text" id="continent">
+    <label for="currency">Currency:</label>
+    <input type="text" id="currency">
+    <label for="population">Population:</label>
+    <input type="number" id="population">
+
+    <button id="b1">
+        Add New Country
+    </button>
+    <script>
+        async function postData() {
+            const name = document.getElementById('name').value;
+            const capital = document.getElementById('capital').value;
+            const continent = document.getElementById('continent').value;
+            const currency = document.getElementById('currency').value;
+            const population = document.getElementById('population').value;
+            const postdata = {
+                name: name,
+                capital: capital,
+                continent: continent,
+                currency: currency,
+                population: population
+            }
+            const response = await fetch('http://localhost:3000/Countries', {
+                method: 'post',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(postdata)
+            }
+            )
+
+        }
+        document.getElementById('b1').addEventListener('click', postData);
+
+    </script>
+
+</body>
+
+</html>

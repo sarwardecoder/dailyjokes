@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST Verbs in action</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <style>
+        body {
+            color: white;
+            background-color: rgb(41, 30, 84);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Add New Country actions: Post </h1>
+    <button id="b1">
+        Add New
+    </button>
+    <script>
+        async function postData() {
+            const response = await fetch('http://localhost:3000/Countries', {
+                method: 'post',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify({
+
+                    "name": "Pakistan",
+                    "capital": "Islamabad",
+                    "continent": "Asia",
+                    "currency": "Rupee",
+                    "population": 2500000
+
+                })
+            }
+            )
+
+        }
+        document.getElementById('b1').addEventListener('click', postData);
+
+    </script>
+
+</body>
+
+</html>

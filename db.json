@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe"
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe"
+    }
+  ],
+  "Countries": [
+    {
+      "id": "1",
+      "name": "United States",
+      "capital": "Washington, D.C.",
+      "continent": "North America",
+      "currency": "USD",
+      "population": 331002651
+    },
+    {
+      "id": "2",
+      "name": "Canada",
+      "capital": "Ottawa",
+      "continent": "North America",
+      "currency": "CAD",
+      "population": 37742154
+    },
+    {
+      "id": "3",
+      "name": "Germany",
+      "capital": "Berlin",
+      "continent": "Europe",
+      "currency": "EUR",
+      "population": 83783942
+    },
+    {
+      "id": "4",
+      "name": "Japan",
+      "capital": "Tokyo",
+      "continent": "Asia",
+      "currency": "JPY",
+      "population": 126476461
+    },
+    {
+      "id": "5",
+      "name": "Brazil",
+      "capital": "Brasília",
+      "continent": "South America",
+      "currency": "BRL",
+      "population": 212559417
+    },
+    {
+      "id": "6",
+      "name": "Australia",
+      "capital": "Canberra",
+      "continent": "Oceania",
+      "currency": "AUD",
+      "population": 25499884
+    },
+    {
+      "id": "7",
+      "name": "India",
+      "capital": "New Delhi",
+      "continent": "Asia",
+      "currency": "INR",
+      "population": 1380004385
+    },
+    {
+      "id": "8",
+      "name": "United Kingdom",
+      "capital": "London",
+      "continent": "Europe",
+      "currency": "GBP",
+      "population": 67886011
+    },
+    {
+      "id": "9",
+      "name": "South Africa",
+      "capital": "Pretoria",
+      "continent": "Africa",
+      "currency": "ZAR",
+      "population": 59308690
+    },
+    {
+      "id": "10",
+      "name": "Russia",
+      "capital": "Moscow",
+      "continent": "Europe"
+    },
+    {
+      "id": "f4a7"
+    },
+    {
+      "id": "6a4c",
+      "name": "Iran",
+      "capital": "Tehran",
+      "continent": "Asia",
+      "currency": "Iranian-Rial",
+      "population": 85961000
+    },
+    {
+      "id": "de47",
+      "name": "Iran",
+      "capital": "Tehran",
+      "continent": "Asia",
+      "currency": "Iranian-Rial",
+      "population": 85961000
+    },
+    {
+      "id": "6320",
+      "name": "Pakistan",
+      "capital": "Islamabad",
+      "continent": "Asia",
+      "currency": "Rupee",
+      "population": 2500000
+    },
+    {
+      "id": "ebe3",
+      "name": "Nepal",
+      "capital": "Kathmundu",
+      "continent": "Asia",
+      "currency": "Rupiya",
+      "population": "2000000"
+    }
+  ]
+}

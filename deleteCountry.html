@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST Verbs in action using Form</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <style>
+        body {
+            color: rgb(250, 245, 245);
+            background-color: rgb(36, 22, 93);
+        }
+
+        input {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Delete County with id </h1>
+
+    <button id="b2">
+        Delete the Country
+    </button>
+    <script>
+
+// async function postData() {
+//             const name = document.getElementById('name').value;
+//             const capital = document.getElementById('capital').value;
+//             const continent = document.getElementById('continent').value;
+//             const currency = document.getElementById('currency').value;
+//             const population = document.getElementById('population').value;
+//             const postdata = {
+//                 name: name,
+//                 capital: capital,
+//                 continent: continent,
+//                 currency: currency,
+//                 population: population
+//             }
+//             const response = await fetch('http://localhost:3000/Countries', {
+//                 method: 'post',
+//                 headers: {
+//                     'content-type': 'application/json'
+//                 },
+//                 body: JSON.stringify(postdata)
+//             }
+//             )
+
+//         }
+//         document.getElementById('b1').addEventListener('click', postData);
+        
+        function deleteCountry() {
+            const countryId = prompt('Enter Country ID:');
+            fetch('http://localhost:3000/Countries/${countryId}', {
+                method: 'DELETE',
+            })
+                .then(response => response.json())
+                .then(data => console.log(data))
+                console.log('Country Delete')
+
+        }
+        document.getElementById('b2').addEventListener('click', deleteCountry);
+
+    </script>
+
+</body>
+
+</html>
